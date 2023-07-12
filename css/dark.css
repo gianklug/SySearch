@@ -1,0 +1,65 @@
+* {
+    scrollbar-width: none;
+}
+
+html {
+    color: #ccc;
+}
+
+body {
+    background: #222;
+}
+
+.sy-title {
+    color: #ccc;
+}
+
+.sy-title-blue {
+    color: #0066cc;
+}
+
+.sy-input {
+    border: 1px solid #ccc;
+    background-color: #222;
+    color: #fff;
+}
+
+.sy-button {
+    border: 1px solid #ccc;
+    color: #ccc;
+    background-color: #222;
+}
+
+.sy-button:hover {
+    cursor: pointer;
+    background-color: rgba(20, 20, 20, 0.8);
+}
+
+.searchmatch {
+    color: #00cc66;
+}
+
+a,
+a:visited,
+a:hover {
+    color: #fff;
+}
+
+.sy-result {
+    border: 2px solid #ccc;
+}
+
+.sy-wikilist-item-remove {
+    background-color: #ccc;
+    color: #000;
+}
+
+.sy-select {
+    border: 1px solid #fff;
+    background-color: #222;
+    color: #ccc;
+}
+
+#sy-popout {
+    color: #888;
+}

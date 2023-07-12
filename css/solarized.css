@@ -1,0 +1,75 @@
+* {
+    scrollbar-width: none;
+}
+
+html {
+    color: #839496;
+}
+
+body {
+    background: #002b36;
+}
+
+.sy-title {
+    color: #586e75;
+}
+
+.sy-title-blue {
+    color: #268bd2;
+}
+
+.sy-input,
+.sy-input:focus {
+    border: 1px solid #586e75;
+    background-color: #073642;
+    color: #93a1a1;
+}
+
+.sy-button {
+    border: 1px solid #586e75;
+    background-color: #073642;
+    color: #93a1a1;
+}
+
+.sy-button:hover {
+    cursor: pointer;
+    background-color: rgba(20, 20, 20, 0.8);
+}
+
+.searchmatch {
+    color: #859900;
+}
+
+a,
+a:visited,
+a:hover {
+    color: #93a1a1;
+
+}
+
+.sy-result {
+    border: 2px solid #586e75;
+}
+
+.sy-resultcount {
+    color: #b58900;
+}
+
+#settings-link {
+    color: #d33682;
+}
+
+.sy-wikilist-item-remove {
+    background-color: #ccc;
+    color: #000;
+}
+
+.sy-select {
+    border: 1px solid #586e75;
+    background-color: #073642;
+    color: #93a1a1;
+}
+
+#sy-popout {
+    color: #888;
+}

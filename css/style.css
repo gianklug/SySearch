@@ -1,0 +1,207 @@
+* {
+    scrollbar-width: none;
+}
+
+html {
+    /*background: black;
+    width: 6vw; */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*overflow:hidden; */
+}
+
+body {
+    background: #fff;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 0;
+    height: 100%;
+    width: 450px;
+    height: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    /*border:1px solid #000;*/
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+.sy-title {
+    /*font-size: 2em;*/
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.sy-title-blue {
+    color: #0066cc;
+}
+
+.sy-input {
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 5px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sy-button {
+    height: 25px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    color: white;
+    background-color: black;
+    user-select: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sy-button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.searchmatch {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+a,
+a:visited,
+a:hover {
+    color: #000;
+}
+
+.sy-settings-link {
+    margin-left: auto;
+    display: inline-block;
+}
+
+.sy-header {
+    display: flex;
+}
+
+.sy-searchbar {
+    display: flex;
+}
+
+.sy-result {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.sy-resultcount {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sy-wikilist-item {
+    display: flex;
+    vertical-align: middle;
+    font-family: "Monaco", "Courier New", monospace;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.sy-wikilist-item-remove {
+    background-color: #000;
+    color: #fff;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 15px;
+}
+
+.sy-wikilist {
+    margin-bottom: 10px;
+}
+
+.sy-settings-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sy-select {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 30px;
+    padding: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    margin: 0;
+}
+
+#sy-popout {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    font-size: 24px;
+    color: #ccc;
+}
+
+/* ################ */
+/* Start loading animation */
+/* ################ */
+
+.lds-ripple {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    margin-top: 20%;
+
+}
+
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid #ccc;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+    0% {
+        top: 72px;
+        left: 72px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 144px;
+        height: 144px;
+        opacity: 0;
+    }
+}
+
+/* ##################*/
+/* End loading animation */
+/* ##################*/

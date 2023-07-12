@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SySearch</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="css" style="display: none;">
+        <link rel="stylesheet" href="css/style.css">
+    </div>
+    <span id="sy-popout">&#8862;</span>
+    <div id="main">
+        <div class="sy-header">
+            <h1 class="sy-title"><span class="sy-title-blue">Sy</span>Search</h1>
+            <a class="sy-settings-link" id="settings-link" href="#">Settings</a>
+        </div>
+        <div class="sy-searchbar">
+            <input type="text" class="sy-input sy-input-inline" id="search"></input>
+            <span class="sy-button" id="search-btn">Search</span>
+        </div>
+        <div class="sy-resultcount" id="resultcount"></div>
+        <div id="searchresults"></div>
+    </div>
+    <div id="settings" class="hidden">
+        <div class="sy-settings-header">
+            <h1 class="sy-title">Settings</h1>
+        </div>
+        <h2>Included wikis</h2>
+        <div class="sy-wikilist" id="wikilist">
+        </div>
+        <div id="wikilist-add" class="sy-searchbar">
+            <input type="text" class="sy-input sy-input-inline" id="wikilist-add-input" placeholder="https://wiki.archlinux.org" />
+            <span class="sy-button" id="wikilist-add-btn">&nbsp;&nbsp;Add&nbsp;&nbsp;</span>
+        </div>
+
+        <h2>Search Settings</h2>
+        <div class="sy-settings-item">
+            <label for="search-type">Search type</label>
+            <select class="sy-select" id="search-type">
+                <option value="automatic">Automatic</option>
+                <option value="exact">Exact Match</option>
+                <option value="partial">Partial Match</option>
+            </select>
+        </div>
+        <div class="sy-settings-item">
+            <label for="search-on-type">Search on type</label>
+            <input type="checkbox" id="auto-search"></input>
+        </div>
+
+        <h2>Design settings</h2>
+        <div class="sy-settings-item">
+            <label for="theme">Theme</label>
+            <select id="theme" class="sy-select">
+                <option value="style.css">Default</option>
+                <option value="dark.css">Dark</option>
+                <option value="solarized.css">Solarized</option>
+                <option value="highcontrast.css">High Contrast</option>
+                <option value="lsd.css">LSD</option>
+            </select>
+        </div>
+        <span class="sy-button" id="save-settings">&nbsp;&nbsp;Save&nbsp;&nbsp;</span>
+    </div>
+    <script src="js/fg.js"></script>
+    <script src="js/settings.js"></script>
+</body>
+
+</html>

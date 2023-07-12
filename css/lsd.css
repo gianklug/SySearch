@@ -1,0 +1,153 @@
+@keyframes rainbow {
+
+    100%,
+    0% {
+        color: rgb(255, 0, 0);
+        border-color: rgb(255, 0, 0);
+    }
+
+    8% {
+        color: rgb(255, 127, 0);
+        border-color: rgb(255, 127, 0);
+    }
+
+    16% {
+        color: rgb(255, 255, 0);
+        border-color: rgb(255, 255, 0);
+    }
+
+    25% {
+        color: rgb(127, 255, 0);
+        border-color: rgb(127, 255, 0);
+    }
+
+    33% {
+        color: rgb(0, 255, 0);
+        border-color: rgb(0, 255, 0);
+    }
+
+    41% {
+        color: rgb(0, 255, 127);
+        border-color: rgb(0, 255, 127);
+    }
+
+    50% {
+        color: rgb(0, 255, 255);
+        border-color: rgb(0, 255, 255);
+    }
+
+    58% {
+        color: rgb(0, 127, 255);
+        border-color: rgb(0, 127, 255);
+    }
+
+    66% {
+        color: rgb(0, 0, 255);
+        border-color: rgb(0, 0, 255);
+    }
+
+    75% {
+        color: rgb(127, 0, 255);
+        border-color: rgb(127, 0, 255);
+    }
+
+    83% {
+        color: rgb(255, 0, 255);
+        border-color: rgb(255, 0, 255);
+    }
+
+    91% {
+        color: rgb(255, 0, 127);
+        border-color: rgb(255, 0, 127);
+    }
+}
+
+
+
+* {
+    scrollbar-width: none;
+}
+
+html {
+    animation: rainbow 2.5s linear;
+    animation-iteration-count: infinite;
+}
+
+body {
+    background: #222;
+}
+
+.sy-title {
+    animation: rainbow 3.5s linear;
+    animation-iteration-count: infinite;
+}
+
+.sy-title-blue {
+    animation: rainbow 1.5s linear;
+    animation-iteration-count: infinite;
+}
+
+.sy-input {
+    border: 1px solid #ccc;
+    background-color: #222;
+    animation: rainbow 1.2s linear;
+    animation-iteration-count: infinite;
+}
+
+.sy-button {
+    border: 1px solid #ccc;
+    animation: rainbow 1.8s linear;
+    animation-iteration-count: infinite;
+    background-color: #222;
+}
+
+.sy-button:hover {
+    cursor: pointer;
+    background-color: rgba(20, 20, 20, 0.8);
+}
+
+.searchmatch {
+    color: #00cc66;
+}
+
+a,
+a:visited,
+a:hover {
+    animation: rainbow 4.8s linear;
+    animation-iteration-count: infinite;
+}
+
+.sy-result {
+    border: 2px solid #ccc;
+    animation: rainbow 0.8s linear;
+    animation-iteration-count: infinite;
+}
+
+.sy-wikilist-item-remove {
+    background-color: #ccc;
+    color: #000;
+}
+
+.sy-select {
+    border: 1px solid #fff;
+    background-color: #222;
+    color: #ccc;
+}
+
+#sy-popout {
+    color: #888;
+}
+
+* {
+    animation: spin 0.8s ease-in-out alternate infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(-0.25deg) skew(-0.25deg);
+    }
+
+    100% {
+        transform: rotate(0.25deg) skew(0.25deg);
+    }
+}
